@@ -1,0 +1,11 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {},
+    "rulesDirectory": []
+}
+
+//https://github.com/palantir/tslint/blob/master/src/configs/recommended.ts
