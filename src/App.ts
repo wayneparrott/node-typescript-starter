@@ -1,22 +1,26 @@
-import * as express from 'express'
+import * as express from "express";
 
 class App {
-  public express
+  private _express: express.App;
 
-  constructor () {
-    this.express = express()
-    this.mountRoutes()
+  constructor() {
+    this._express = express();
+    this.mountRoutes();
   }
 
-  private mountRoutes (): void {
-    const router = express.Router()
-    router.get('/', (req, res) => {
+  get express() {
+    return this._express;
+  }
+
+  private mountRoutes(): void {
+    const router = express.Router();
+    router.get("/", (req, res) => {
       res.json({
-        message: 'Hello World!'
-      })
-    })
-    this.express.use('/', router)
+        message: "Hello World!"
+      });
+    });
+    this.express.use("/", router);
   }
 }
 
-export default new App().express
+export default new App();
