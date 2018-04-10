@@ -1,11 +1,11 @@
 import app from "./App";
 
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
-app.express.listen(port, (err) => {
+app.express.listen(PORT, (err) => {
   if (err) {
     return console.log(err);
   }
 
-  return console.log(`server is listening on ${port}`);
+  return console.log(`Server is listening on ${PORT}`);
 });
