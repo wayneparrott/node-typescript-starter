@@ -1,7 +1,10 @@
 import * as express from "express";
+import { ApiController } from "./ApiController";
+import { WebController, WWW_DIR } from "./WebController";
+
 
 class App {
-  private _express: express.App;
+  private _express: express.Application;
 
   constructor() {
     this._express = express();
@@ -13,14 +16,11 @@ class App {
   }
 
   private mountRoutes(): void {
-    const router = express.Router();
-    router.get("/", (req, res) => {
-      res.json({
-        message: "Hello World!"
-      });
-    });
-    this.express.use("/", router);
+    this.express.use("/api", ApiController);
+    this.express.use(WebController);
+    this.express.use(express.static(WWW_DIR));
   }
+
 }
 
 export default new App();
