@@ -32,6 +32,11 @@ npm run dev
 npm test
 ```
 
+Testin browser
+http://localhost:3000
+http://localhost:3000/api
+http://localhost:3000/api/:name/foo
+
 ### Linting
 
 ```bash
