@@ -1,16 +1,14 @@
 ## Skeleton for Node.js with Express applications written in TypeScript
 
 ### GIT
-create new github repo <newreponame>
 ``` 
-git clone -depth=1 https://github.com/wayneparrott/node-typescript-starter
-mv node-typescript-starter <newreponame>
+create new github repo <newreponame>
+git clone -depth=1 https://github.com/wayneparrott/node-typescript-starter <newreponame>
 cd <newreponame>
 git remote set-url origin https://github.com/wayneparrott/<newreponame>.git
 git push -u origin master
+import into eclipse as new project or start using from shell
 ```
-import into eclipse as new project
-
 or 
 
 use Github's importer https://github.com/new/import
@@ -19,6 +17,7 @@ use Github's importer https://github.com/new/import
 ### Initialize New Project
 npm init
 npm install
+npm run build
 
 ### Development
 
@@ -35,7 +34,7 @@ npm test
 Testin browser
 http://localhost:3000
 http://localhost:3000/api
-http://localhost:3000/api/:name/foo
+http://localhost:3000/api//foo
 
 ### Linting
 
@@ -46,7 +45,7 @@ npm run lint
 ### Building a container
 
 ```bash
-docker build .
+docker build -t <imagename>:1.0 .
 ```
 
 ## Notes
