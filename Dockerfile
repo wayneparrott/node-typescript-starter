@@ -1,4 +1,4 @@
-FROM risingstack/alpine:9
+FROM risingstack/alpine:3.7-v8.10.0-4.8.0
 
 ENV PORT 3000
 
