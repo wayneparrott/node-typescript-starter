@@ -1,4 +1,24 @@
-## Skeleton for Node.js applications written in TypeScript
+## Skeleton for Node.js with Express applications written in TypeScript
+
+### GIT
+create new github repo <newreponame>
+``` 
+git clone -depth=1 https://github.com/wayneparrott/node-typescript-starter
+mv node-typescript-starter <newreponame>
+cd <newreponame>
+git remote set-url origin https://github.com/wayneparrott/<newreponame>.git
+git push -u origin master
+```
+import into eclipse as new project
+
+or 
+
+use Github's importer https://github.com/new/import
+ git clone -depth=1 <newrepourl>
+
+### Initialize New Project
+npm init
+npm install
 
 ### Development
 
@@ -31,4 +51,6 @@ from VS Code or CodeMix for Eclipse from Genutiec
     
     
     
-*cloned from https://github.com/RisingStack/node-typescript-starter*
+*influences*
+https://github.com/RisingStack/node-typescript-starter
+https://github.com/Microsoft/TypeScript-Node-Starter
