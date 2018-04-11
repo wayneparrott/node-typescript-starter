@@ -42,10 +42,11 @@ http://localhost:3000/api//foo
 npm run lint
 ```
 
-### Building a container
+### Building and running a container
 
 ```bash
 docker build -t <imagename>:1.0 .
+docker run --rm -it --name containername -p 3000:3000 <imagename>:1.0 
 ```
 
 ## Notes
