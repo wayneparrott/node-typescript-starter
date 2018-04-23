@@ -13,7 +13,7 @@
     "build": "npm run build-ts && npm run tslint && npm run copy-static-assets",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
-    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "copy-static-assets": "ts-node scripts/copyStaticAssets.ts",
     "dev": "tsc --watch & nodemon dist",
     "test": "echo 'no test implemented' ",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
